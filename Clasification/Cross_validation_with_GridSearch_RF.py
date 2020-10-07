@@ -164,11 +164,3 @@ def Cross_validation_RF(X,y,folds,name_csv,iterations=10,number_folds_validation
     save_results(name_csv, 'Parameters Mode', 'Final', [stats.mode(best_n_estimators_experiments)[0][0], stats.mode(best_max_features_experiments)[0][0]])
     save_results(name_csv, '# Samples used', ' ', [samples])
 
-Feat_GloVe = np.loadtxt('Features-GloVe-300.txt')[0:10,0:20]
-#Load labels
-path_base='LabelsClassification.csv'
-labels_data = pd.read_csv(path_base,delimiter=',')
-y = list(labels_data['Agr'])
-y = np.asarray(y)[0:10]
-
-Cross_validation_RF(Feat_GloVe,y,2,'results.csv',iterations=2,number_folds_validation=2)
