@@ -11,7 +11,7 @@ from sklearn import mixture
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 import sys
-
+import pandas as pd
 
 def BestGMM_subjects (FeaturesMatrix_list, n_min, n_max, paso = 1, grafic = True, scale = 'normal', covariance = False):
     metrics_n = {}

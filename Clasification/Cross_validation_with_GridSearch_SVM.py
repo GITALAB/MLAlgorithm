@@ -3,7 +3,7 @@
 """
 Created on Thu Dec 19 10:27:17 2019
 
-@author: gita
+@author: gita. Daniel, Felipe, Guber
 """
 import numpy as np
 from sklearn import preprocessing, svm, model_selection,metrics
@@ -14,6 +14,7 @@ import pandas as pd
 import csv
 from scipy import stats
 import os
+
 
 #%%
 def save_results(file_csv, name_result, fold, result):
