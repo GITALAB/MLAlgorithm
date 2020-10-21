@@ -2,7 +2,7 @@
 """
 Created on Wed Sep 30 11:26:23 2020
 
-@author: Felipe
+@author: Felipe, Guber y Escobar
 """
 import numpy as np
 from sklearn import preprocessing, svm, model_selection,metrics
